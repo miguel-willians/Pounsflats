@@ -3,10 +3,11 @@ import ReservationsIcon from "../assets/icons/ReservationsIcon.svg";
 import HistoricIcon from "../assets/icons/HistoricIcon.svg";
 import ChatIcon from "../assets/icons/ChatIcon.svg";
 import ProfileIcon from "../assets/icons/ProfileIcon.svg";
+import styles from "./Menu.module.css";
 
 function Menu() {
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul>
         <li>
           <img src={HomeIcon} alt="Ícone da homepage" />

@@ -1,0 +1,5 @@
+.btn {
+  color: var(--main-purple);
+  gap: 4px;
+  cursor: pointer;
+}
