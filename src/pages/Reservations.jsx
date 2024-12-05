@@ -1,5 +1,11 @@
+import Menu from "../components/Menu";
+
 function Reservations() {
-  return <div>Reserva</div>;
+  return (
+    <div>
+      <Menu />
+    </div>
+  );
 }
 
 export default Reservations;

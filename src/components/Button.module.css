@@ -1,5 +1,6 @@
 .btn {
   color: var(--main-purple);
+  font-family: var(--main-font);
   padding: 4px 12px;
   cursor: pointer;
   border-radius: 8px;
