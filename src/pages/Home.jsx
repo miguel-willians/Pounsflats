@@ -5,6 +5,7 @@ import Main from "../components/Main";
 import Menu from "../components/Menu";
 
 import ArrowIcon from "../assets/icons/ArrowIcon.svg";
+import Filters from "../components/Filters";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
           </div>
           <h1>Bem-vindo, Raphael!</h1>
         </Header>
+        <Filters />
       </Main>
       <Menu />
     </div>

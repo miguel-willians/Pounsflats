@@ -1,5 +1,18 @@
 .btn {
   color: var(--main-purple);
-  gap: 4px;
+  padding: 4px 12px;
   cursor: pointer;
+  border-radius: 8px;
+}
+
+.inactive {
+  background-color: var(--main-white);
+  color: var(--main-black);
+  border: 1px solid var(--border-inactive);
+}
+
+.active {
+  background-color: var(--main-purple);
+  color: var(--main-white);
+  border: none;
 }
