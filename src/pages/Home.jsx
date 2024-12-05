@@ -10,14 +10,14 @@ import Filters from "../components/Filters";
 function Home() {
   return (
     <div>
+      <Header>
+        <div>
+          <img src={ArrowIcon} alt="Botão retornar" />
+          <NavLink to="/">+ Cadastrar Imóvel</NavLink>
+        </div>
+        <h1>Bem-vindo, Raphael!</h1>
+      </Header>
       <Main>
-        <Header>
-          <div>
-            <img src={ArrowIcon} alt="Botão retornar" />
-            <NavLink to="/">+ Cadastrar Imóvel</NavLink>
-          </div>
-          <h1>Bem-vindo, Raphael!</h1>
-        </Header>
         <Filters />
       </Main>
       <Menu />
