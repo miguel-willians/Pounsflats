@@ -1,8 +1,8 @@
-import HomeIcon from "../assets/icons/HomeIcon.svg";
-import ReservationsIcon from "../assets/icons/ReservationsIcon.svg";
-import HistoricIcon from "../assets/icons/HistoricIcon.svg";
-import ChatIcon from "../assets/icons/ChatIcon.svg";
-import ProfileIcon from "../assets/icons/ProfileIcon.svg";
+import HomeIcon from "../assets/icons/HomeIcon.jsx";
+import ReservationsIcon from "../assets/icons/ReservationsIcon.jsx";
+import HistoricIcon from "../assets/icons/HistoricIcon.jsx";
+import ChatIcon from "../assets/icons/ChatIcon.jsx";
+import ProfileIcon from "../assets/icons/ProfileIcon.jsx";
 import styles from "./Menu.module.css";
 
 function Menu() {
@@ -10,19 +10,19 @@ function Menu() {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <img src={HomeIcon} alt="Ícone da homepage" />
+          <HomeIcon />
         </li>
         <li>
-          <img src={ReservationsIcon} alt="Ícone da página de reserva" />
+          <ReservationsIcon />
         </li>
         <li>
-          <img src={HistoricIcon} alt="Ícone da página de histórico" />
+          <HistoricIcon />
         </li>
         <li>
-          <img src={ChatIcon} alt="Ícone da página de chat" />
+          <ChatIcon />
         </li>
         <li>
-          <img src={ProfileIcon} alt="Ícone da página de perfil" />
+          <ProfileIcon />
         </li>
       </ul>
     </nav>
