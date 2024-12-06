@@ -42,73 +42,66 @@ function PersonalInfo() {
   return (
     <section>
       <form>
-        {/* Nome e sobrenome */}
         <div className={styles.formGroup}>
           <input
             type="text"
             id="name"
             value={formData.name}
             onChange={handleInputChange}
-            disabled={!isEditing} // Habilitado apenas no modo edição
+            disabled={!isEditing}
           />
           <label htmlFor="name">Nome e sobrenome</label>
         </div>
 
-        {/* CPF (sempre desabilitado) */}
         <div className={styles.formGroup}>
           <input type="text" id="cpf" value={formData.cpf} disabled />
           <label htmlFor="cpf">CPF</label>
         </div>
 
-        {/* Número de celular */}
         <div className={styles.formGroup}>
           <input
             type="text"
             id="phone"
             value={formData.phone}
             onChange={handleInputChange}
-            disabled={!isEditing} // Habilitado apenas no modo edição
+            disabled={!isEditing}
           />
           <label htmlFor="phone">Número de celular</label>
         </div>
 
-        {/* Data de nascimento */}
         <div className={styles.formGroup}>
           <input
             type="date"
             id="birthdate"
             value={formData.birthdate}
             onChange={handleInputChange}
-            disabled={!isEditing} // Habilitado apenas no modo edição
+            disabled={!isEditing}
           />
           <label htmlFor="birthdate">Data de nascimento</label>
         </div>
 
-        {/* E-mail */}
         <div className={styles.formGroup}>
           <input
             type="email"
             id="email"
             value={formData.email}
             onChange={handleInputChange}
-            disabled={!isEditing} // Habilitado apenas no modo edição
+            disabled={!isEditing}
           />
           <label htmlFor="email">E-mail</label>
         </div>
 
-        {/* Senha */}
         <div className={styles.formGroup}>
           <input
             type="password"
             id="password"
             value={formData.password}
             onChange={handleInputChange}
-            disabled={!isEditing} // Habilitado apenas no modo edição
+            disabled={!isEditing}
           />
           <label htmlFor="password">Senha</label>
         </div>
 
-        {/* Botões de ação */}
         <div className={styles.edit}>
           {!isEditing ? (
             <Button onClick={handleEdit} type="default">
@@ -116,7 +109,7 @@ function PersonalInfo() {
             </Button>
           ) : (
             <>
-              <Button onClick={handleSave} type="primary">
+              <Button onClick={handleSave} type="default">
                 Salvar
               </Button>
               <Button onClick={handleCancel} type="secondary">

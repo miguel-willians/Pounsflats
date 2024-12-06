@@ -26,3 +26,12 @@
   height: 48px;
   border: none;
 }
+
+.secondary {
+  background-color: var(--border-inactive);
+  color: var(--main-white);
+  padding: 4px 16px;
+  width: 345px;
+  height: 48px;
+  border: none;
+}
