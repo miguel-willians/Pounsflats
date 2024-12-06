@@ -1,4 +1,4 @@
-import { useState } from "react"; // Importa o hook de estado
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import Header from "../components/Header";
@@ -15,16 +15,11 @@ function Home() {
   const [showExit, setShowExit] = useState(false);
 
   const handleArrowClick = () => {
-    setShowExit(true); // Exibe o Exit
+    setShowExit(true);
   };
 
-  // const handleExitClick = () => {
-  //   setShowExit(false); // Exibe o Menu
-  // };
-
-  // Função para lidar com o clique em "Não, quero continuar"
   const handleContinueClick = () => {
-    setShowExit(false); // Exibe o Menu
+    setShowExit(false);
   };
 
   return (
@@ -47,13 +42,7 @@ function Home() {
           <Rental />
         </RentalsList>
       </Main>
-      {showExit ? (
-        <Exit
-          onContinue={handleContinueClick} // Passa a função de continuar
-        />
-      ) : (
-        <Menu />
-      )}
+      {showExit ? <Exit onContinue={handleContinueClick} /> : <Menu />}
     </>
   );
 }
