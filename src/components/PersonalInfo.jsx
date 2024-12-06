@@ -1,61 +1,129 @@
+import { useState } from "react";
 import Button from "./Button";
 import styles from "./PersonalInfo.module.css";
 
 function PersonalInfo() {
+  const [isEditing, setIsEditing] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "Rafael Rodrigues",
+    cpf: "983.724.162-55",
+    phone: "(41) 99115-2028",
+    birthdate: "1991-03-04",
+    email: "henrique@e-mail.com.br",
+    password: "**********",
+  });
+
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
+
+  const handleEdit = (e) => {
+    e.preventDefault();
+    setIsEditing(true);
+  };
+
+  const handleSave = (e) => {
+    e.preventDefault();
+    console.log("Dados salvos:", formData);
+    setIsEditing(false);
+  };
+
+  const handleCancel = (e) => {
+    e.preventDefault();
+    setIsEditing(false);
+  };
+
+  console.log(isEditing);
+
   return (
     <section>
       <form>
+        {/* Nome e sobrenome */}
         <div className={styles.formGroup}>
           <input
             type="text"
             id="name"
-            defaultValue="Henrique Rodrigues"
-            disabled
+            value={formData.name}
+            onChange={handleInputChange}
+            disabled={!isEditing} // Habilitado apenas no modo edição
           />
           <label htmlFor="name">Nome e sobrenome</label>
         </div>
+
+        {/* CPF (sempre desabilitado) */}
         <div className={styles.formGroup}>
-          <input type="text" id="cpf" defaultValue="983.724.162-55" disabled />
+          <input type="text" id="cpf" value={formData.cpf} disabled />
           <label htmlFor="cpf">CPF</label>
         </div>
+
+        {/* Número de celular */}
         <div className={styles.formGroup}>
           <input
             type="text"
             id="phone"
-            defaultValue="(41) 99115-2028"
-            disabled
+            value={formData.phone}
+            onChange={handleInputChange}
+            disabled={!isEditing} // Habilitado apenas no modo edição
           />
           <label htmlFor="phone">Número de celular</label>
         </div>
+
+        {/* Data de nascimento */}
         <div className={styles.formGroup}>
           <input
             type="date"
             id="birthdate"
-            defaultValue="1991-03-04"
-            disabled
+            value={formData.birthdate}
+            onChange={handleInputChange}
+            disabled={!isEditing} // Habilitado apenas no modo edição
           />
           <label htmlFor="birthdate">Data de nascimento</label>
         </div>
+
+        {/* E-mail */}
         <div className={styles.formGroup}>
           <input
             type="email"
             id="email"
-            defaultValue="henrique@e-mail.com.br"
-            disabled
+            value={formData.email}
+            onChange={handleInputChange}
+            disabled={!isEditing} // Habilitado apenas no modo edição
           />
           <label htmlFor="email">E-mail</label>
         </div>
+
+        {/* Senha */}
         <div className={styles.formGroup}>
           <input
             type="password"
             id="password"
-            defaultValue="**********"
-            disabled
+            value={formData.password}
+            onChange={handleInputChange}
+            disabled={!isEditing} // Habilitado apenas no modo edição
           />
           <label htmlFor="password">Senha</label>
         </div>
+
+        {/* Botões de ação */}
         <div className={styles.edit}>
-          <Button type="default">Editar Informações</Button>
+          {!isEditing ? (
+            <Button onClick={handleEdit} type="default">
+              Editar Informações
+            </Button>
+          ) : (
+            <>
+              <Button onClick={handleSave} type="primary">
+                Salvar
+              </Button>
+              <Button onClick={handleCancel} type="secondary">
+                Cancelar
+              </Button>
+            </>
+          )}
         </div>
       </form>
     </section>

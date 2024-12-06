@@ -1,23 +1,32 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
 .formGroup {
   position: relative;
-  margin-bottom: 20px;
 }
 
 input {
-  width: 100%;
+  font-family: var(--main-font);
+  width: 345px;
+  height: 56px;
   padding: 20px 12px 8px;
   font-size: 16px;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 4px;
   background-color: #f5f5f5;
-  color: #aaa; /* Texto cinza */
-  pointer-events: none; /* Desabilita interações */
+  color: #333;
   box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 input:disabled {
   background-color: #f5f5f5;
   color: #aaa;
+  pointer-events: none; /* Desabilita interações */
 }
 
 label {
