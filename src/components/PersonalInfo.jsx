@@ -1,35 +1,61 @@
+import Button from "./Button";
 import styles from "./PersonalInfo.module.css";
 
 function PersonalInfo() {
   return (
     <section>
-      <form className={styles.formContainer}>
+      <form>
         <div className={styles.formGroup}>
+          <input
+            type="text"
+            id="name"
+            defaultValue="Henrique Rodrigues"
+            disabled
+          />
           <label htmlFor="name">Nome e sobrenome</label>
-          <input type="text" id="name" placeholder="Henrique Rodrigues" />
         </div>
         <div className={styles.formGroup}>
+          <input type="text" id="cpf" defaultValue="983.724.162-55" disabled />
           <label htmlFor="cpf">CPF</label>
-          <input type="text" id="cpf" placeholder="983.724.162-55" />
         </div>
         <div className={styles.formGroup}>
+          <input
+            type="text"
+            id="phone"
+            defaultValue="(41) 99115-2028"
+            disabled
+          />
           <label htmlFor="phone">Número de celular</label>
-          <input type="text" id="phone" placeholder="(41) 99115-2028" />
         </div>
         <div className={styles.formGroup}>
+          <input
+            type="date"
+            id="birthdate"
+            defaultValue="1991-03-04"
+            disabled
+          />
           <label htmlFor="birthdate">Data de nascimento</label>
-          <div className={styles.inputWithIcon}>
-            <input type="date" id="birthdate" defaultValue="1991-03-04" />
-            <span className={styles.icon}>📅</span>
-          </div>
         </div>
         <div className={styles.formGroup}>
+          <input
+            type="email"
+            id="email"
+            defaultValue="henrique@e-mail.com.br"
+            disabled
+          />
           <label htmlFor="email">E-mail</label>
-          <input type="email" id="email" placeholder="henrique@e-mail.com.br" />
         </div>
         <div className={styles.formGroup}>
+          <input
+            type="password"
+            id="password"
+            defaultValue="**********"
+            disabled
+          />
           <label htmlFor="password">Senha</label>
-          <input type="password" id="password" placeholder="**********" />
+        </div>
+        <div className={styles.edit}>
+          <Button type="default">Editar Informações</Button>
         </div>
       </form>
     </section>

@@ -6,14 +6,23 @@
   border-radius: 8px;
 }
 
-.inactive {
+.filterInactive {
   background-color: var(--main-white);
   color: var(--main-black);
   border: 1px solid var(--border-inactive);
 }
 
-.active {
+.filterActive {
   background-color: var(--main-purple);
   color: var(--main-white);
+  border: none;
+}
+
+.default {
+  background-color: var(--main-purple);
+  color: var(--main-white);
+  padding: 4px 16px;
+  width: 345px;
+  height: 48px;
   border: none;
 }

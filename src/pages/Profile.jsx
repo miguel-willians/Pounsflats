@@ -4,6 +4,7 @@ import Header from "../components/Header";
 
 import ArrowIcon from "../assets/icons/ArrowIcon";
 import ProfileInfo from "../components/ProfileInfo";
+import PersonalInfo from "../components/PersonalInfo";
 
 function Profile() {
   return (
@@ -11,9 +12,11 @@ function Profile() {
       <Header>
         <ArrowIcon />
         <h1>Meu perfil</h1>
-        <ProfileInfo />
       </Header>
-      <Main></Main>
+      <Main>
+        <ProfileInfo />
+        <PersonalInfo />
+      </Main>
       <Menu />
     </>
   );

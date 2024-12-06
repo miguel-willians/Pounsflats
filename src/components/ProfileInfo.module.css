@@ -1,6 +1,7 @@
 .profile {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
 }
 
@@ -18,6 +19,7 @@
 .info div {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
   font-size: 0.75rem;
 }
@@ -25,4 +27,17 @@
 .info div img {
   width: 20px;
   height: 20px;
+}
+
+.editPic {
+  display: flex;
+  flex-direction: row;
+  color: var(--main-purple);
+  gap: 8px;
+}
+
+.editPic img {
+  border-radius: 0;
+  width: 16px;
+  height: 16px;
 }

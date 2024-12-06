@@ -4,6 +4,7 @@ import ProfilePic from "../assets/images/profile-pic.jpg";
 import StarIcon from "../assets/icons/StarIcon.svg";
 import ClockIcon from "../assets/icons/ClockIcon.svg";
 import VerifiedIcon from "../assets/icons/VerifiedIcon.svg";
+import EditIcon from "../assets/icons/EditIcon.svg";
 
 function ProfileInfo() {
   return (
@@ -11,7 +12,8 @@ function ProfileInfo() {
       <div className={styles.profile}>
         <img src={ProfilePic} alt="Profile pic" />
         <p>Rafael Rodrigues</p>
-        <div>
+        <div className={styles.editPic}>
+          <img src={EditIcon} alt="Edit Icon" />
           <p>Editar foto</p>
         </div>
         <div className={styles.info}>
