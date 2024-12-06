@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 
-.active {
-  color: #ffffff;
+.active .icon {
+  color: white;
   fill-opacity: 1;
 }
