@@ -1,0 +1,20 @@
+.messageBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid var(--border-inactive);
+  border-radius: 8px;
+  color: var(--main-purple);
+  font-size: 0.75rem;
+}
+
+.messageBox div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.messageBox div p {
+  font-size: 0.875rem;
+}
