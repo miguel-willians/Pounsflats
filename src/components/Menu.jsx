@@ -1,8 +1,8 @@
-import HomeIcon from "../assets/icons/HomeIcon.jsx";
-import ReservationsIcon from "../assets/icons/ReservationsIcon.jsx";
-import HistoricIcon from "../assets/icons/HistoricIcon.jsx";
-import ChatIcon from "../assets/icons/ChatIcon.jsx";
-import ProfileIcon from "../assets/icons/ProfileIcon.jsx";
+import HomeIcon from "../assets/icons/menu_icons/HomeIcon.jsx";
+import ReservationsIcon from "../assets/icons/menu_icons/ReservationsIcon.jsx";
+import HistoricIcon from "../assets/icons/menu_icons/HistoricIcon.jsx";
+import ChatIcon from "../assets/icons/menu_icons/ChatIcon.jsx";
+import ProfileIcon from "../assets/icons/menu_icons/ProfileIcon.jsx";
 import styles from "./Menu.module.css";
 import { NavLink } from "react-router-dom";
 
