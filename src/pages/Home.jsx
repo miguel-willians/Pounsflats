@@ -15,11 +15,16 @@ function Home() {
   const [showExit, setShowExit] = useState(false);
 
   const handleArrowClick = () => {
-    setShowExit(true);
+    setShowExit(true); // Exibe o Exit
   };
 
-  const handleExitClick = () => {
-    setShowExit(false);
+  // const handleExitClick = () => {
+  //   setShowExit(false); // Exibe o Menu
+  // };
+
+  // Função para lidar com o clique em "Não, quero continuar"
+  const handleContinueClick = () => {
+    setShowExit(false); // Exibe o Menu
   };
 
   return (
@@ -43,12 +48,9 @@ function Home() {
         </RentalsList>
       </Main>
       {showExit ? (
-        <button
-          onClick={handleExitClick}
-          style={{ background: "none", border: "none", cursor: "pointer" }}
-        >
-          <Exit />
-        </button>
+        <Exit
+          onContinue={handleContinueClick} // Passa a função de continuar
+        />
       ) : (
         <Menu />
       )}
