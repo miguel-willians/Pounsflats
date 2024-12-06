@@ -1,7 +1,7 @@
 import styles from "./Rental.module.css";
 
 import StarIcon from "../assets/icons/StarIcon.svg";
-import Home from "../assets/images/Home.png";
+import Home from "../assets/images/home.png";
 
 function Rental() {
   return (

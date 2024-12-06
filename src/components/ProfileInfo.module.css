@@ -1,0 +1,28 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile img {
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+}
+
+.info {
+  display: flex;
+  gap: 8px;
+}
+
+.info div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.75rem;
+}
+
+.info div img {
+  width: 20px;
+  height: 20px;
+}
