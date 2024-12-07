@@ -1,0 +1,31 @@
+.inpBox {
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+}
+
+.inpBox div {
+  display: flex;
+  gap: 16px;
+}
+
+.inpBox div div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.inpBox div div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* #checkbox {
+  width: 20px; 
+  height: 20px;
+  background-color: #7b2cbf;
+  accent-color: var(
+    --main-purple
+  ); 
+} */
