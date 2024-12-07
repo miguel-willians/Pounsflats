@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import ArrowIcon from "../assets/icons/ArrowIcon";
 import Message from "../components/Message";
 import ReservItem from "../components/ReservItem";
+import Calendar from "../components/Calendar";
 
 function Reservations() {
   return (
@@ -29,6 +30,7 @@ function Reservations() {
           title="Sincronização AirBNB"
           desc="Você pode sincronizar o seu calendário do AirBNB e gerir seus imóveis em um só lugar. Que tal fazer isso agora? Clique neste banner e sincronize!"
         />
+        <Calendar />
         <h2>Reservas do mês</h2>
         <ReservItem
           title="Poundsflats Aquário"
