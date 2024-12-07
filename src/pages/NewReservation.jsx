@@ -11,10 +11,6 @@ import ArrowIcon from "../assets/icons/ArrowIcon";
 import CheckInput from "../components/CheckInput";
 
 function NewReservation() {
-  function handleSubmit(e) {
-    e.preventDefault();
-  }
-
   return (
     <div>
       <Header>
@@ -79,9 +75,9 @@ function NewReservation() {
           />
         </form>
 
-        <Button type={"default"} onClick={handleSubmit}>
-          Confirmar Reserva
-        </Button>
+        <NavLink to="sucess">
+          <Button type={"default"}>Confirmar Reserva</Button>
+        </NavLink>
         <NavLink to="/reservations">
           <Button type={"secondary"}>Cancelar</Button>
         </NavLink>

@@ -27,6 +27,13 @@
   border: none;
 }
 
+.primary {
+  background-color: var(--main-white);
+  padding: 4px 16px;
+  width: 345px;
+  height: 48px;
+}
+
 .secondary {
   background-color: var(--border-inactive);
   color: var(--main-white);
