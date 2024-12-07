@@ -15,6 +15,10 @@
   justify-content: space-between;
 }
 
+.messageBox div img {
+  cursor: pointer;
+}
+
 .messageBox div p {
   font-size: 0.875rem;
 }
