@@ -1,14 +1,11 @@
-import LeftArrowIcon from "../assets/icons/LeftArrowIcon.svg";
-import RightArrowIcon from "../assets/icons/RightArrowIcon.svg";
+import styles from "./Calendar.module.css";
+
+import DatepickerMenu from "../assets/icons/DatepickerMenu.svg";
 
 function Calendar() {
   return (
-    <div>
-      <div>
-        <img src={LeftArrowIcon} alt="Left Arrow Icon" />
-        <p>June 2021</p>
-        <img src={RightArrowIcon} alt="Left Arrow Icon" />
-      </div>
+    <div className={styles.calendar}>
+      <img src={DatepickerMenu} alt="Datepicker menu" />
     </div>
   );
 }

@@ -1,5 +1,7 @@
 import { useState } from "react";
+
 import Button from "./Button";
+
 import styles from "./PersonalInfo.module.css";
 
 function PersonalInfo() {

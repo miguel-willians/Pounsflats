@@ -5,6 +5,7 @@ import Reservations from "./pages/Reservations";
 import Profile from "./pages/Profile";
 import Historic from "./pages/Historic";
 import Chat from "./pages/Chat";
+import NewReservation from "./pages/NewReservation";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="reservations" element={<Reservations />} />
+        <Route path="reservations/new" element={<NewReservation />} />
         <Route path="profile" element={<Profile />} />
         <Route path="chat" element={<Chat />} />
         <Route path="historic" element={<Historic />} />
