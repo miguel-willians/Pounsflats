@@ -32,7 +32,7 @@ function Reservations() {
         />
         <Calendar />
         <h2>Reservas do mês</h2>
-        <NavLink to={"edit/1"}>
+        <NavLink to={"edit"}>
           <ReservItem
             title="Poundsflats Aquário"
             name="Raphael Viana"

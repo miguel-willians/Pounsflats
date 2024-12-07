@@ -35,11 +35,6 @@ function Edit() {
     setIsEditing(true);
   };
 
-  const handleSave = (e) => {
-    e.preventDefault();
-    setIsEditing(false);
-  };
-
   const handleCancel = (e) => {
     e.preventDefault();
     setIsEditing(false);
@@ -122,19 +117,17 @@ function Edit() {
             <Button onClick={handleEdit} type="default">
               Editar Reserva
             </Button>
-            <Button onClick={handleEdit} type="primary">
+            <Button type="primary">
               <ChatIcon />
               Falar com o hóspede
             </Button>
-            <Button onClick={handleEdit} type="cancel">
-              Cancelar Reserva
-            </Button>
+            <Button type="cancel">Cancelar Reserva</Button>
           </>
         ) : (
           <>
-            <Button onClick={handleSave} type="default">
-              Salvar edição
-            </Button>
+            <NavLink to="sucess">
+              <Button type="default">Salvar edição</Button>
+            </NavLink>
             <Button onClick={handleCancel} type="secondary">
               Cancelar
             </Button>

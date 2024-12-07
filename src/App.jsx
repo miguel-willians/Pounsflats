@@ -8,6 +8,7 @@ import Chat from "./pages/Chat";
 import NewReservation from "./pages/NewReservation";
 import Sucess from "./pages/Sucess";
 import Edit from "./pages/Edit";
+import EditSucess from "./pages/EditSucess";
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
         <Route index element={<Home />} />
         <Route path="reservations" element={<Reservations />} />
         <Route path="reservations/new" element={<NewReservation />} />
-        <Route path="reservations/edit/1" element={<Edit />} />
+        <Route path="reservations/edit" element={<Edit />} />
         <Route path="reservations/new/sucess" element={<Sucess />} />
+        <Route path="reservations/edit/sucess" element={<EditSucess />} />
         <Route path="profile" element={<Profile />} />
         <Route path="chat" element={<Chat />} />
         <Route path="historic" element={<Historic />} />
