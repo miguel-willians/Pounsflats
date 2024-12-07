@@ -3,18 +3,24 @@
 import styles from "./CheckInput.module.css";
 
 import StarIcon from "../assets/icons/StarIcon.svg";
+import Checkbox from "../assets/icons/Checkbox.svg";
+import CheckboxUncheked from "../assets/icons/CheckboxUncheked.svg";
 
 function CheckInput({ checked, title, location, avgReview, perDay }) {
   return (
     <div className={styles.inpBox}>
-      <input type="checkbox" defaultChecked={checked} id={styles.checkbox} />
+      {checked ? (
+        <img src={Checkbox} alt="Checkbox" />
+      ) : (
+        <img src={CheckboxUncheked} alt="Checkbox unchecked" />
+      )}
       <div>
-        <div>
+        <div className={styles.details}>
           <div>
             <h3>{title}</h3>
             <div>
               <img src={StarIcon} alt="Star Icon" />
-              {avgReview}
+              <p> {avgReview}</p>
             </div>
           </div>
           <div>

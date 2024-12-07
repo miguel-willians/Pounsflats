@@ -6,19 +6,20 @@
 
 .inpBox div {
   display: flex;
-  gap: 16px;
+  gap: 6px;
 }
 
-.inpBox div div {
+.details {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.inpBox div div div {
+.details div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 20px;
 }
 
 /* #checkbox {
