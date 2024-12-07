@@ -14,6 +14,7 @@
   --main-blue: #10002b;
   --main-white: #ffffff;
   --main-black: #000000;
+  --main-red: #f56565;
 
   --border-inactive: #2d37484d;
   --black-alpha-600: #00000099;
@@ -34,4 +35,8 @@ html {
 
 h1 {
   font-size: 1.75rem;
+}
+
+a {
+  color: inherit;
 }

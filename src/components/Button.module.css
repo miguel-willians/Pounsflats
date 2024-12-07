@@ -32,10 +32,23 @@
   padding: 4px 16px;
   width: 345px;
   height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .secondary {
   background-color: var(--border-inactive);
+  color: var(--main-white);
+  padding: 4px 16px;
+  width: 345px;
+  height: 48px;
+  border: none;
+}
+
+.cancel {
+  background-color: var(--main-red);
   color: var(--main-white);
   padding: 4px 16px;
   width: 345px;

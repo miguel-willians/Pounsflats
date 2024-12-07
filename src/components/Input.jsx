@@ -14,7 +14,7 @@ function Input({
   labelName,
 }) {
   return (
-    <>
+    <div className={styles.formGroup}>
       <input
         className={`${styles.inp} ${styles[className]}`}
         type={type}
@@ -25,7 +25,7 @@ function Input({
         placeholder={placeholder}
       />
       {label && <label htmlFor={labelFor}>{labelName}</label>}
-    </>
+    </div>
   );
 }
 

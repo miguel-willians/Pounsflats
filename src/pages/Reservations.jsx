@@ -32,15 +32,17 @@ function Reservations() {
         />
         <Calendar />
         <h2>Reservas do mês</h2>
-        <ReservItem
-          title="Poundsflats Aquário"
-          name="Raphael Viana"
-          date="27/04/2023 - 30/04/2023"
-          cpf="983.***.***-49"
-          mobile="(41) 99115-2028"
-          email="raphamedina20@gmail.com"
-          comp="Booking.com"
-        />
+        <NavLink to={"edit/1"}>
+          <ReservItem
+            title="Poundsflats Aquário"
+            name="Raphael Viana"
+            date="27/04/2023 - 30/04/2023"
+            cpf="983.***.***-49"
+            mobile="(41) 99115-2028"
+            email="raphamedina20@gmail.com"
+            comp="Booking.com"
+          />
+        </NavLink>
         <ReservItem
           title="Poundsflats Aquário"
           name="Raphael Viana"

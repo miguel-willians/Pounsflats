@@ -44,3 +44,7 @@ input[value]:not([value=""]) + label {
 .noLabelInp {
   padding: 12px;
 }
+
+.formGroup {
+  position: relative;
+}
