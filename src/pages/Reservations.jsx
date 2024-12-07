@@ -17,7 +17,7 @@ function Reservations() {
           <NavLink to="/">
             <ArrowIcon />
           </NavLink>
-          <NavLink to="/">+ Nova reserva</NavLink>
+          <NavLink to="new">+ Nova reserva</NavLink>
         </div>
         <h1>Reservas</h1>
       </Header>

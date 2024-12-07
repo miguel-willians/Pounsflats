@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import Button from "./Button";
+import Input from "./Input";
 
 import styles from "./PersonalInfo.module.css";
 
@@ -30,7 +31,6 @@ function PersonalInfo() {
 
   const handleSave = (e) => {
     e.preventDefault();
-    console.log("Dados salvos:", formData);
     setIsEditing(false);
   };
 
@@ -43,65 +43,82 @@ function PersonalInfo() {
 
   return (
     <section>
-      <form>
+      <form className={styles.personalForm}>
         <div className={styles.formGroup}>
-          <input
+          <Input
             type="text"
             id="name"
             value={formData.name}
             onChange={handleInputChange}
             disabled={!isEditing}
+            label={true}
+            labelFor="name"
+            labelName="Nome e sobrenome"
           />
-          <label htmlFor="name">Nome e sobrenome</label>
         </div>
 
         <div className={styles.formGroup}>
-          <input type="text" id="cpf" value={formData.cpf} disabled />
-          <label htmlFor="cpf">CPF</label>
+          <Input
+            type="text"
+            id="cpf"
+            value={formData.cpf}
+            disabled={true}
+            label={true}
+            labelFor="cpf"
+            labelName="CPF"
+          />
         </div>
 
         <div className={styles.formGroup}>
-          <input
+          <Input
             type="text"
             id="phone"
             value={formData.phone}
             onChange={handleInputChange}
             disabled={!isEditing}
+            label={true}
+            labelFor="phone"
+            labelName="Número de celular"
           />
-          <label htmlFor="phone">Número de celular</label>
         </div>
 
         <div className={styles.formGroup}>
-          <input
+          <Input
             type="date"
             id="birthdate"
             value={formData.birthdate}
             onChange={handleInputChange}
             disabled={!isEditing}
+            label={true}
+            labelFor="birthdate"
+            labelName="Data de nascimento"
           />
-          <label htmlFor="birthdate">Data de nascimento</label>
         </div>
 
         <div className={styles.formGroup}>
-          <input
+          <Input
             type="email"
             id="email"
             value={formData.email}
             onChange={handleInputChange}
             disabled={!isEditing}
+            label={true}
+            labelFor="email"
+            labelName="E-mail"
           />
-          <label htmlFor="email">E-mail</label>
         </div>
 
         <div className={styles.formGroup}>
-          <input
+          <Input
             type="password"
             id="password"
             value={formData.password}
             onChange={handleInputChange}
             disabled={!isEditing}
+            label={true}
+            labelFor="password"
+            labelName="Senha"
           />
-          <label htmlFor="password">Senha</label>
         </div>
 
         <div className={styles.edit}>
