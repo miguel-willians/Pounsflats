@@ -7,7 +7,7 @@ import Menu from "../components/Menu";
 import Filters from "../components/Filters";
 import RentalsList from "../components/RentalsList";
 import Rental from "../components/Rental";
-import Exit from "../components/Exit";
+import Confirm from "../components/Confirm.jsx";
 
 import ArrowIcon from "../assets/icons/ArrowIcon.jsx";
 
@@ -42,7 +42,16 @@ function Home() {
           <Rental />
         </RentalsList>
       </Main>
-      {showExit ? <Exit onContinue={handleContinueClick} /> : <Menu />}
+      {showExit ? (
+        <Confirm
+          onContinue={handleContinueClick}
+          question={"Você realmente deseja sair do Poundsflats?"}
+          option1={"Sim, quero sair agora!"}
+          option2={"Não, quero continuar"}
+        />
+      ) : (
+        <Menu />
+      )}
     </>
   );
 }

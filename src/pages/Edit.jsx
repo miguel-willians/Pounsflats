@@ -10,9 +10,11 @@ import styles from "./Edit.module.css";
 
 import ArrowIcon from "../assets/icons/ArrowIcon";
 import ChatIcon from "../assets/icons/menu_icons/ChatIcon";
+import Confirm from "../components/Confirm";
 
 function Edit() {
   const [isEditing, setIsEditing] = useState(false);
+  const [isConfirmingCancel, setIsConfirmingCancel] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "Rafael Rodrigues",
@@ -35,9 +37,17 @@ function Edit() {
     setIsEditing(true);
   };
 
-  const handleCancel = (e) => {
+  const handleCancelEdit = (e) => {
     e.preventDefault();
     setIsEditing(false);
+  };
+
+  const handleCancelClick = () => {
+    setIsConfirmingCancel(true);
+  };
+
+  const handleCancelConfirmation = () => {
+    setIsConfirmingCancel(false);
   };
 
   return (
@@ -111,27 +121,42 @@ function Edit() {
         />
       </Main>
 
-      <div className={styles.edit}>
-        {!isEditing ? (
-          <>
-            <Button onClick={handleEdit} type="default">
-              Editar Reserva
-            </Button>
-            <Button type="primary">
-              <ChatIcon />
-              Falar com o hóspede
-            </Button>
-            <Button type="cancel">Cancelar Reserva</Button>
-          </>
-        ) : (
-          <>
-            <NavLink to="sucess">
-              <Button type="default">Salvar edição</Button>
-            </NavLink>
-            <Button onClick={handleCancel} type="secondary">
-              Cancelar
-            </Button>
-          </>
+      <div>
+        <div className={styles.edit}>
+          {!isConfirmingCancel &&
+            (!isEditing ? (
+              <>
+                <Button onClick={handleEdit} type="default">
+                  Editar Reserva
+                </Button>
+                <Button type="primary">
+                  <ChatIcon />
+                  Falar com o hóspede
+                </Button>
+                <Button onClick={handleCancelClick} type="cancel">
+                  Cancelar Reserva
+                </Button>
+              </>
+            ) : (
+              <>
+                <NavLink to="sucess">
+                  <Button type="default">Salvar edição</Button>
+                </NavLink>
+                <Button onClick={handleCancelEdit} type="secondary">
+                  Cancelar
+                </Button>
+              </>
+            ))}
+        </div>
+
+        {isConfirmingCancel && (
+          <Confirm
+            question={"Deseja cancelar a reserva?"}
+            option1={"Sim, cancelar agora"}
+            link1={"/reservations/cancel/sucess"}
+            option2={"Não quero cancelar"}
+            onContinue={handleCancelConfirmation}
+          />
         )}
       </div>
     </div>

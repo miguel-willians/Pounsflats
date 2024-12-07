@@ -9,6 +9,7 @@ import NewReservation from "./pages/NewReservation";
 import Sucess from "./pages/Sucess";
 import Edit from "./pages/Edit";
 import EditSucess from "./pages/EditSucess";
+import CancelSucess from "./pages/CancelSucess";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="reservations/edit" element={<Edit />} />
         <Route path="reservations/new/sucess" element={<Sucess />} />
         <Route path="reservations/edit/sucess" element={<EditSucess />} />
+        <Route path="reservations/cancel/sucess" element={<CancelSucess />} />
         <Route path="profile" element={<Profile />} />
         <Route path="chat" element={<Chat />} />
         <Route path="historic" element={<Historic />} />
