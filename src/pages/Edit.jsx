@@ -21,7 +21,7 @@ function Edit() {
     cpf: "983.724.162-55",
     phone: "(41) 99115-2028",
     email: "henrique@e-mail.com.br",
-    date: ["27/04/2023", "29/04/2023"],
+    date: ["2023-04-27", "2023-04-29"],
   });
 
   const handleInputChange = (e) => {
@@ -101,23 +101,23 @@ function Edit() {
         <h2>Período</h2>
         <Input
           type="date"
-          id="birthdate"
+          id="check-in"
           value={formData.date[0]}
           onChange={handleInputChange}
           disabled={!isEditing}
           label={true}
-          labelFor="birthdate"
-          labelName="Data de nascimento"
+          labelFor="check-in"
+          labelName="Data do check-in"
         />
         <Input
           type="date"
-          id="birthdate"
+          id="check-out"
           value={formData.date[1]}
           onChange={handleInputChange}
           disabled={!isEditing}
           label={true}
-          labelFor="birthdate"
-          labelName="Data de nascimento"
+          labelFor="check-out"
+          labelName="Data do check-out"
         />
       </Main>
 
