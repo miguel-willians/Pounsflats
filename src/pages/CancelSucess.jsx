@@ -10,7 +10,7 @@ function CancelSucess() {
     <>
       <Main>
         <div className={style.box}>
-          <img src="icons/ConfirmIcon.svg" alt="Confirm Icon" />
+          <img src="/icons/ConfirmIcon.svg" alt="Confirm Icon" />
           <p>Sua reserva foi cancelada com sucesso.</p>
           <p>Seu hóspede será notificado por e-mail e sms.</p>
         </div>

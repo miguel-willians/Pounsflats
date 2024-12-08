@@ -6,16 +6,16 @@ function CheckInput({ checked, title, location, avgReview, perDay }) {
   return (
     <div className={styles.inpBox}>
       {checked ? (
-        <img src="icons/Checkbox.svg" alt="Checkbox" />
+        <img src="/icons/Checkbox.svg" alt="Checkbox" />
       ) : (
-        <img src="icons/CheckboxUncheked.svg" alt="Checkbox unchecked" />
+        <img src="/icons/CheckboxUncheked.svg" alt="Checkbox unchecked" />
       )}
       <div>
         <div className={styles.details}>
           <div>
             <h3>{title}</h3>
             <div>
-              <img src="icons/StarIcon.svg" alt="Star Icon" />
+              <img src="/icons/StarIcon.svg" alt="Star Icon" />
               <p> {avgReview}</p>
             </div>
           </div>

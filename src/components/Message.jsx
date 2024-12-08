@@ -19,7 +19,11 @@ function Message({ title, desc }) {
     <div className={styles.messageBox}>
       <div>
         <p>{title}</p>
-        <img src="icons/CloseIcon.svg" alt="Close Icon" onClick={handleClose} />
+        <img
+          src="/icons/CloseIcon.svg"
+          alt="Close Icon"
+          onClick={handleClose}
+        />
       </div>
       <p>{desc}</p>
     </div>

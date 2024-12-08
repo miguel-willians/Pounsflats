@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 function Confirm({ onContinue, question, option1, option2, link1 }) {
   return (
     <div className={styles.exitBox}>
-      <img src="icons/Indicator.svg" alt="Indicator" onClick={onContinue} />
+      <img src="/icons/Indicator.svg" alt="Indicator" onClick={onContinue} />
       <div>
         <p>{question}</p>
         <NavLink to={link1}>
@@ -23,26 +23,3 @@ function Confirm({ onContinue, question, option1, option2, link1 }) {
 }
 
 export default Confirm;
-
-// import Button from "./Button";
-
-// import styles from "./Exit.module.css";
-
-// import Indicator from "../assets/icons/Indicator.svg";
-
-// function Exit({ onContinue }) {
-//   return (
-//     <div className={styles.exitBox}>
-//       <img src={Indicator} alt="Indicator" onClick={onContinue} />
-//       <div>
-//         <p>Você realmente deseja sair do Poundsflats?</p>
-//         <Button type="default">Sim, quero sair agora!</Button>
-//         <Button type="secondary" onClick={onContinue}>
-//           Não, quero continuar
-//         </Button>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Exit;
