@@ -49,10 +49,6 @@ input[value]:not([value=""]) + label {
   position: relative;
 }
 
-.inp[type="date"]::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
 .formGroup input[type="date"] {
   position: relative;
   padding-right: 2.5rem;
@@ -70,4 +66,7 @@ input[value]:not([value=""]) + label {
   background-size: contain;
   background-repeat: no-repeat;
   pointer-events: none;
+}
+.inp[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
 }
