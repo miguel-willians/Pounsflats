@@ -5,7 +5,7 @@ import Main from "../components/Main";
 
 import style from "./Sucess.module.css";
 
-import ConfirmIcon from "../assets/icons/ConfirmIcon.svg";
+import ConfirmIcon from "/src/assets/icons/ConfirmIcon.svg";
 
 function CancelSucess() {
   return (
