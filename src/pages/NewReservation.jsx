@@ -7,7 +7,7 @@ import Button from "../components/Button";
 
 import styles from "./NewReservation.module.css";
 
-import ArrowIcon from "../assets/icons/ArrowIcon";
+import ArrowIcon from "/src/assets/component_icons/ArrowIcon";
 import CheckInput from "../components/CheckInput";
 
 function NewReservation() {

@@ -4,7 +4,7 @@ import Menu from "../components/Menu";
 import Main from "../components/Main";
 import Header from "../components/Header";
 
-import ArrowIcon from "../assets/icons/ArrowIcon";
+import ArrowIcon from "../assets/component_icons/ArrowIcon";
 import Message from "../components/Message";
 import ReservItem from "../components/ReservItem";
 import Calendar from "../components/Calendar";

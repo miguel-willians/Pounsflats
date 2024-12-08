@@ -4,7 +4,7 @@ import Menu from "../components/Menu";
 import Main from "../components/Main";
 import Header from "../components/Header";
 
-import ArrowIcon from "../assets/icons/ArrowIcon";
+import ArrowIcon from "../assets/component_icons/ArrowIcon";
 import ProfileInfo from "../components/ProfileInfo";
 import PersonalInfo from "../components/PersonalInfo";
 

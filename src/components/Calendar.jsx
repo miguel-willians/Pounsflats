@@ -1,11 +1,9 @@
 import styles from "./Calendar.module.css";
 
-import DatepickerMenu from "../assets/icons/DatepickerMenu.svg";
-
 function Calendar() {
   return (
     <div className={styles.calendar}>
-      <img src={DatepickerMenu} alt="Datepicker menu" />
+      <img src="/icons/DatepickerMenu.svg" alt="Datepicker menu" />
     </div>
   );
 }

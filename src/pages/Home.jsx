@@ -9,7 +9,7 @@ import RentalsList from "../components/RentalsList";
 import Rental from "../components/Rental";
 import Confirm from "../components/Confirm.jsx";
 
-import ArrowIcon from "../assets/icons/ArrowIcon.jsx";
+import ArrowIcon from "../assets/component_icons/ArrowIcon.jsx";
 
 function Home() {
   const [showExit, setShowExit] = useState(false);
