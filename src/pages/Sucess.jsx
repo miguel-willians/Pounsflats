@@ -5,14 +5,12 @@ import Main from "../components/Main";
 
 import style from "./Sucess.module.css";
 
-import ConfirmIcon from "../assets/icons/ConfirmIcon.svg";
-
 function Sucess() {
   return (
     <>
       <Main>
         <div className={style.box}>
-          <img src={ConfirmIcon} alt="Confirm Icon" />
+          <img src="icons/ConfirmIcon.svg" alt="Confirm Icon" />
           <p>Maravilha! Sua reserva foi confirmada com sucesso.</p>
           <p>Seu hóspede será notificado por e-mail e sms.</p>
           <p>Você cadastrar outra reserva ou finalizar por hora.</p>

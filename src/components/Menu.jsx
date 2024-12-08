@@ -1,10 +1,12 @@
-import HomeIcon from "../assets/icons/menu_icons/HomeIcon.jsx";
-import ReservationsIcon from "../assets/icons/menu_icons/ReservationsIcon.jsx";
-import HistoricIcon from "../assets/icons/menu_icons/HistoricIcon.jsx";
-import ChatIcon from "../assets/icons/menu_icons/ChatIcon.jsx";
-import ProfileIcon from "../assets/icons/menu_icons/ProfileIcon.jsx";
-import styles from "./Menu.module.css";
 import { NavLink } from "react-router-dom";
+
+import HomeIcon from "../assets/menu_icons/HomeIcon.jsx";
+import ReservationsIcon from "../assets/menu_icons/ReservationsIcon.jsx";
+import HistoricIcon from "../assets/menu_icons/HistoricIcon.jsx";
+import ChatIcon from "../assets/menu_icons/ChatIcon.jsx";
+import ProfileIcon from "../assets/menu_icons/ProfileIcon.jsx";
+
+import styles from "./Menu.module.css";
 
 function Menu() {
   const getActiveClass = ({ isActive }) => (isActive ? styles.active : "");

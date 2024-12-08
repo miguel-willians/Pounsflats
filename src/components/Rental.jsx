@@ -1,17 +1,14 @@
 import styles from "./Rental.module.css";
 
-import StarIcon from "../assets/icons/StarIcon.svg";
-import Home from "/src/assets/images/home.png";
-
 function Rental() {
   return (
     <li className={styles.rental}>
-      <img src={Home} alt="Rental image" />
+      <img src="images/home.png" alt="Rental image" />
       <section>
         <div>
           <h2>Poundsflats Aquário</h2>
           <div className={styles.rating}>
-            <img src={StarIcon} />
+            <img src="icons/StarIcon.svg" alt="Star Icon" />
             <p>4,5</p>
           </div>
         </div>

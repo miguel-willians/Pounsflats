@@ -3,13 +3,12 @@ import Button from "./Button";
 
 import styles from "./Confirm.module.css";
 
-import Indicator from "../assets/icons/Indicator.svg";
 import { NavLink } from "react-router-dom";
 
 function Confirm({ onContinue, question, option1, option2, link1 }) {
   return (
     <div className={styles.exitBox}>
-      <img src={Indicator} alt="Indicator" onClick={onContinue} />
+      <img src="icons/Indicator.svg" alt="Indicator" onClick={onContinue} />
       <div>
         <p>{question}</p>
         <NavLink to={link1}>

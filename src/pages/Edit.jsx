@@ -9,7 +9,7 @@ import Button from "../components/Button";
 import styles from "./Edit.module.css";
 
 import ArrowIcon from "../assets/icons/ArrowIcon";
-import ChatIcon from "../assets/icons/menu_icons/ChatIcon";
+import ChatIcon from "../assets/menu_icons/ChatIcon";
 import Confirm from "../components/Confirm";
 
 function Edit() {
