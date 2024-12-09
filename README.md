@@ -15,4 +15,4 @@ Este projeto tem como objetivo recriar as páginas Home, Reservas e Perfil do pr
 
 ## Link para Deploy:
 
-Você pode visitar o deploy na sua versão mobile [aqui](https://pounsflats-aagemc4sf-miguels-projects-4d68e04c.vercel.app).
+Você pode visitar o deploy na sua versão mobile [aqui](https://pounsflats.vercel.app).
